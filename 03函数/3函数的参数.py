@@ -31,3 +31,12 @@ def person2(name, age, **kw):
 extra = {'msg': '简化写法', 'job': 'Engineer'}
 person2('Jack', 24, **extra)
 print('\n')
+
+# 可变参数
+def calc(*numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n * n
+    return sum
+print('可变参数',calc(1, 2, 3))
+print('\n')
